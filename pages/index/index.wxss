@@ -53,6 +53,9 @@
 .pink-bg {
     background-color: #ff629a;
 }
+.black-bg {
+    background-color: #000000;
+}
 .purple-bg {
     background-color: #b8b8f1;
 }
