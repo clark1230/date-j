@@ -39,7 +39,7 @@
 .day {
     width: 60rpx;
     height: 60rpx;
-    color: #88d2ac;
+    color: #000;
     font-size: 26rpx;
     font-weight: 200;
 }
