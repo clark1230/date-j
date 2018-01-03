@@ -22,12 +22,12 @@ const conf = {
   getThisMonthDays(year, month) {
     return new Date(year, month, 0).getDate();
   },
-  getFirstDayOfWeek(year, month) {
+  getFirstDayOfWeek(year, month) { 
     return new Date(Date.UTC(year, month - 1, 1)).getDay();
   },
   calculateEmptyGrids(year, month) {
     const firstDayOfWeek = this.getFirstDayOfWeek(year, month);
-    let empytGrids = [];
+    let empytGrids = [];             
     if (firstDayOfWeek > 0) {
       for (let i = 0; i < firstDayOfWeek; i++) {
         empytGrids.push(i);
@@ -49,7 +49,7 @@ const conf = {
     const thisMonthDays = this.getThisMonthDays(year, month);
 
     for (let i = 1; i <= thisMonthDays; i++) {
-      if (i == new Date().getDay()) {
+      if (i == new Date().getDay()&&month==new Date().getMonth()+1) {
         days.push({
           day: i,
           choosed: false,
